@@ -1,0 +1,350 @@
+:root {
+  --black: #111111;
+  --black-grey: #222222;
+  --grey: #4e4e4e;
+  --golden: #cfb991;
+  --rumble: #ebd99f;
+  --tassel: #ddb94f;
+  --summit: #daaa00;
+  --clay: #8e6f3e;
+  --tusk: #c4bfc0;
+  --fog: #9d9795;
+  --storm: #6f727b;
+  --footprints: #555960;
+  font-family: 'Acumin Pro Regular', sans-serif;
+  box-sizing: border-box;
+}
+
+/* FONT FACE DECLARATIONS */
+
+@font-face {
+  font-family: 'United Sans Cond Heavy';
+  src: url('./assets/united-sans-cond-heavy.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Acumin Pro Regular';
+  src: url('./assets/Acumin-RPro.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Acumin Pro Bold';
+  src: url('./assets/Acumin-BdPro.woff') format('woff');
+}
+
+/* NAV SECTION */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
+  padding: 16px;
+  width: 95vw;
+
+  font-family: 'Acumin Pro Bold', sans-serif;
+  color: black;
+
+  background-color: white;
+}
+
+.nav-divider {
+  width: 6px;
+  height: calc(20px + 4vh);
+
+  background-color: var(--golden);
+}
+
+.nav-link {
+  display: inline-block;
+
+  margin: 0;
+  padding: 0;
+
+  font-size: 1.2vw;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link:hover {
+  border-bottom: 3px solid var(--golden);
+  color: black;
+}
+
+.logo {
+  width: 16vw;
+  margin: 3vh 8vw 3vh 4vw;
+}
+
+@media (max-width: 500px) {
+  .logo {
+    display: none;
+  }
+
+  .nav-divider {
+    display: none;
+  }
+
+  .nav-link {
+    font-size: 2vw;
+  }
+}
+
+/* CAROUSEL SECTION */
+
+.carousel-wrapper {
+  padding: 3vw;
+  background-color: var(--golden);
+}
+
+.carousel {
+  box-shadow: 0px 0px 16px rgb(44, 44, 44);
+}
+
+/* MAIN BANNER SECTION */
+
+.jumbotron {
+  background-color: var(--black);
+  color: white;
+}
+
+.display-4 {
+  display: inline-block;
+
+  margin-bottom: 40px;
+
+  font-family: 'United Sans Cond Heavy', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.1em;
+
+  border-bottom: 3px solid var(--golden);
+}
+
+.lead {
+  font-family: 'Acumin Pro Regular', sans-serif;
+}
+
+/* STUDY INFO SECTION */
+
+.study-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 360px;
+  max-width: 400px;
+  margin: 0 auto 100px;
+}
+
+.study-text {
+  max-width: 80%;
+  margin: 15px auto 15px auto;
+
+  text-align: center;
+  font-family: 'Acumin Pro Regular', sans-serif;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+
+  width: 90%;
+  padding-bottom: 20px;
+  margin: 0 auto;
+
+  border-bottom: 5px solid var(--golden);
+}
+
+.emphasis-box {
+  width: 90%;
+  padding: 20px 10px 16px 10px;
+  margin: 0 auto;
+
+  text-align: center;
+  letter-spacing: 0.225em;
+  font-size: 14pt;
+  color: black;
+  font-family: 'United Sans Cond Heavy', sans-serif;
+
+  background-color: var(--golden);
+}
+
+/* TUITION TABLE SECTION */
+
+.table-section {
+  padding: 8vw;
+}
+
+thead > tr > th:first-child {
+  border-top-left-radius: 5px;
+}
+
+thead > tr > th:last-child {
+  border-top-right-radius: 5px;
+}
+
+th {
+  font-family: 'United Sans Cond Heavy', sans-serif;
+}
+
+tr {
+  border-left: 3px solid var(--golden);
+}
+
+th,
+td {
+  padding: 10px !important;
+}
+
+/* FORM SECTION */
+
+.form-section {
+  background-color: var(--black);
+  color: white;
+}
+
+.form-banner-container {
+  width: 45%;
+  min-width: 350px;
+}
+
+.display-3 {
+  display: inline-block;
+
+  margin-bottom: 40px;
+
+  font-family: 'United Sans Cond Heavy', sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 3rem;
+
+  border-bottom: 3px solid var(--golden);
+}
+
+.form_container {
+  margin: auto;
+  width: 40%;
+  min-width: 320px;
+
+  font-family: 'Acumin Pro Regular', sans-serif;
+}
+
+.form_question > .form_label,
+fieldset > .form_label {
+  margin-top: 50px;
+
+  font-family: 'Acumin Pro Bold', sans-serif;
+  font-size: 1.2rem;
+  color: var(--golden);
+}
+
+label {
+  margin-top: 16px;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+
+  color: white;
+
+  background-color: var(--black-grey);
+
+  transition: background-color ease 200ms;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  background-color: var(--grey);
+}
+
+.form_action {
+  display: flex;
+  justify-content: center;
+}
+
+button.default {
+  text-align: center;
+
+  width: 30%;
+  padding: 20px 10px 16px 10px;
+  margin: 30px 0;
+
+  letter-spacing: 0.225em;
+  font-size: 16pt;
+  color: var(--golden);
+  font-family: 'United Sans Cond Heavy', sans-serif;
+
+  border: 3px solid var(--golden);
+  background-color: var(--black);
+}
+
+/* NEWSFEED SECTION */
+
+.newsfeed {
+  font-family: 'Acumin Pro Regular', sans-serif;
+}
+
+.news-banner {
+  margin: 100px auto 50px;
+  width: 80%;
+  text-align: center;
+
+  font-family: 'United Sans Cond Heavy', sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 3rem;
+
+  border-bottom: 3px solid var(--golden);
+}
+
+.media {
+  width: 80%;
+  min-width: 350px;
+  margin: 32px auto;
+  padding: 16px;
+
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.32);
+}
+
+.mt-0 {
+  border-bottom: 3px solid var(--golden);
+  margin-bottom: 8px 0px 32px 0px;
+
+  font-family: 'Acumin Pro Bold', sans-serif;
+}
+
+.news-date {
+  margin: 0;
+  text-align: right;
+  font-family: 'United Sans Cond Heavy', sans-serif;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  margin-top: 75px;
+  border-top: 3px solid var(--golden);
+  padding: 20px;
+}
+
+footer p {
+  margin: 20px;
+
+  text-align: center;
+  font-family: 'Acumin Pro Regular', sans-serif;
+  font-size: 0.75rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--golden);
+}
+
+footer a:hover {
+  background-color: var(--golden);
+  color: white;
+}
