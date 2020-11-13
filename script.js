@@ -9,7 +9,7 @@ function init() {
     thumbnail.classList.add('far', 'fa-newspaper', 'fa-3x', 'mr-3');
     const mediaBody = document.createElement('div');
     mediaBody.classList.add('media-body')
-    const titleElement = document.createElement('h5');
+    const titleElement = document.createElement('h2');
     titleElement.classList.add('mt-0')
     titleElement.textContent = articleData.title;
     const bodyElement = document.createElement('p');
